@@ -1,3 +1,8 @@
+<button type="button" class="btn btn-primary" (click)="clickAddData()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add
+</button>
+
+
 <table class="mt-5 table table-dark table-striped">
     <thead>
         <tr>
@@ -5,8 +10,8 @@
             <th>description</th>
             <th></th>
             <th></th>
-            
-            
+
+
 
         </tr>
     </thead>
@@ -15,12 +20,16 @@
             <td>{{ i.title}}</td>
             <td>{{i.description}}</td>
             <td>
-                <button type="button"class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+
+                 <button type="button" class="btn btn-primary" 
+                (click)="onEdit(i)" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Edit
                 </button>
+              
+
             </td>
             <td>
-                <button>Delete</button>
+                <button (click)="deleteData(i)">Delete</button>
             </td>
 
         </tr>
@@ -34,23 +43,23 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog " >
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Details</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
 
-                <form  [formGroup]="details">
+                <form [formGroup]="details">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title</label>
-                        <input type="email" class="form-control" formControlName="title" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
+                        <input type="email" class="form-control" formControlName="title" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" >
 
                     </div>
                     <div class="form-group">
@@ -58,12 +67,18 @@
                         <input type="text" formControlName="des" class="form-control" id="exampleInputPassword1">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary"(click)="postData()">Add</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                <!-- <button type="button" class="btn btn-primary" 
+                (click)="postData()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add
+                </button> -->
+                <button type="button" class="btn btn-primary" (click)="postData()">Add</button>
+                <!-- <button type="button" class="btn btn-primary" (click)="updateData()">Update</button> -->
             </div>
         </div>
     </div>

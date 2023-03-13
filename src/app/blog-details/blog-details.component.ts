@@ -46,38 +46,7 @@ export class BlogDetailsComponent implements OnInit {
 
 
 
-  // itemId: number;
-  // itemData: any;
-
-  // constructor(private route: ActivatedRoute, private http: HttpClient) { }
-
-  // ngOnInit() {
-  //   this.itemId = +this.route.snapshot.paramMap.get('id');
-  //   this.http.get(`http://localhost:3000/blogDetails/${this.itemId}`).subscribe(data => {
-  //     this.itemData = data;
-  //   });
-  // }
-
-
-  // constructor(private route: ActivatedRoute, private service: GetdataService) { }
-
-
-  // public id!: number;
-  // public dataId: any;
-  // ngOnInit() {
-
-  //   let id = parseInt(this.route.snapshot.paramMap.get('id'));
-
-  //   this.dataId = id;
-  //   this.service.getDataById(this.id);
-  // }
-
-  // getData(){
-  //   this.service.getDataById()
-  // }
-
-
-
+ 
 
 
 

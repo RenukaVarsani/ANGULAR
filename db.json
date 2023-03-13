@@ -2,54 +2,49 @@
   "userDetails": [
     {
       "id": 1,
-     "role":"admin",
-      "name":"riaa",
-      "password":"123",
-      "email":"riaa@gmail.com"
+      "role": "admin",
+      "name": "riaa",
+      "password": "123",
+      "email": "riaa@gmail.com"
     },
     {
       "id": 2,
-     "role":"admin",
-      "name":"renuka",
-      "password":"12345",
-      "email":"renuka@gmail.com"
+      "role": "admin",
+      "name": "renuka",
+      "password": "12345",
+      "email": "renuka@gmail.com"
     },
     {
       "id": 3,
-     "role":"user",
-      "name":"dev",
-      "password":"1234",
-      "email":"dev@gmail.com"
+      "role": "user",
+      "name": "dev",
+      "password": "1234",
+      "email": "dev@gmail.com"
     },
     {
       "id": 4,
-     "role":"user",
-      "name":"ram",
-      "password":"456",
-      "email":"ram@gmail.com"
+      "role": "user",
+      "name": "ram",
+      "password": "456",
+      "email": "ram@gmail.com"
     }
-
   ],
   "blogDetails": [
     {
-      "id": 1,
-      "title":"food", 
-     "topTitle":"WELCOME HERE!!!",
-      "description":"joey doesn't share food"
-    },
-    {
       "id": 2,
-      "title":"travel", 
-      "topTitle":"WELCOME HERE!!!",
-      "description":"Travel to fresh "
+      "title": "travel",
+      "topTitle": "WELCOME HERE!!!",
+      "description": "Travel to fresh "
     },
     {
       "id": 3,
-      "title":"fitness", 
-      "topTitle":"WELCOME HERE!!!",
-      "description":"Do Yoga to fit your mind"
+      "title": "fitness",
+      "topTitle": "WELCOME HERE!!!",
+      "description": "Do Yoga to fit your mind"
+    },
+    {
+      "id": 4,
+      "title": "travelgg"
     }
-
   ]
-  
 }
