@@ -1,0 +1,21 @@
+
+  
+  <table class="mt-5 table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>descriptaion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{ i.id }}</td>
+        <td> <a [routerLink]="['blogdetails',i.id]" >{{i.title}}</a></td>
+        <td>{{ i.description }}</td>
+  
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- <router-outlet></router-outlet> -->
